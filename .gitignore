@@ -28,6 +28,9 @@ backend/bootstrap/cache/*.php
 backend/composer.phar
 backend/composer.lock
 
+# PHPUnit
+backend/.phpunit.result.cache
+
 # IDE files
 backend/.idea/
 backend/.vscode/
@@ -171,6 +174,10 @@ docker/nginx/logs/
 # ==========================================
 # GENERAL
 # ==========================================
+
+# Environment files (keep only .env.example)
+backend/.env
+backend/.env.testing
 
 # IDE files
 .idea/
