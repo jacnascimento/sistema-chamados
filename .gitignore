@@ -1,0 +1,216 @@
+# Sistema de Chamados - .gitignore
+
+# ==========================================
+# BACKEND (Laravel)
+# ==========================================
+
+# Dependencies
+backend/vendor/
+backend/node_modules/
+
+# Environment files
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/.env.local
+backend/.env.*.local
+
+# Laravel specific
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/app/public/*
+backend/bootstrap/cache/*.php
+
+# Composer
+backend/composer.phar
+backend/composer.lock
+
+# IDE files
+backend/.idea/
+backend/.vscode/
+backend/*.swp
+backend/*.swo
+backend/*~
+
+# OS generated files
+backend/.DS_Store
+backend/.DS_Store?
+backend._*
+backend.Spotlight-V100
+backend.Trashes
+backendehthumbs.db
+backendThumbs.db
+
+# ==========================================
+# FRONTEND (Vue)
+# ==========================================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend.pnp.js
+
+# Production builds
+frontend/dist/
+frontend/build/
+
+# Environment files
+frontend/.env
+frontend.env.local
+frontend.env.development.local
+frontend.env.test.local
+frontend.env.production.local
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/lerna-debug.log*
+frontend.pnpm-debug.log*
+
+# Runtime data
+frontend/pids
+frontend/*.pid
+frontend/*.seed
+frontend/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+frontend/coverage/
+frontend/*.lcov
+
+# nyc test coverage
+frontend/.nyc_output
+
+# Dependency directories
+frontend/jspm_packages/
+
+# TypeScript cache
+frontend/*.tsbuildinfo
+
+# Optional npm cache directory
+frontend/.npm
+
+# Optional eslint cache
+frontend/.eslintcache
+
+# Optional stylelint cache
+frontend.stylelintcache
+
+# Microbundle cache
+frontend.rpt2_cache/
+frontend.rts2_cache_cjs/
+frontend.rts2_cache_es/
+frontend.rts2_cache_umd/
+
+# Optional REPL history
+frontend.node_repl_history
+
+# Output of 'npm pack'
+frontend*.tgz
+
+# Yarn Integrity file
+frontend.yarn-integrity
+
+# dotenv environment variable files
+frontend.env.development.local
+frontend.env.test.local
+frontend.env.production.local
+frontend.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+frontend.cache
+frontend.parcel-cache
+
+# Next.js build output
+frontend.next
+
+# Nuxt.js build / generate output
+frontend.nuxt
+frontenddist
+
+# Gatsby files
+frontend.cache/
+frontendpublic
+
+# Vuepress build output
+frontend.vuepress/dist
+
+# Serverless directories
+frontend.serverless/
+
+# FuseBox cache
+frontend.fusebox/
+
+# DynamoDB Local files
+frontend.dynamodb/
+
+# TernJS port file
+frontend.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+frontend.vscode-test
+
+# yarn v2
+frontend.yarn/cache
+frontend.yarn/unplugged
+frontend.yarn/build-state.yml
+frontend.yarn/install-state.gz
+frontend.pnp.*
+
+# ==========================================
+# DOCKER
+# ==========================================
+
+# Docker volumes
+docker/mysql/data/
+docker/nginx/logs/
+
+# ==========================================
+# GENERAL
+# ==========================================
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Database files
+*.sqlite
+*.db
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# ==========================================
+# LARAVEL SAIL (if using)
+# ==========================================
+
+# Laravel Sail
+docker-compose.override.yml
